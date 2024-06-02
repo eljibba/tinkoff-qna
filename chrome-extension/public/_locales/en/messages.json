@@ -1,10 +1,10 @@
 {
   "extensionDescription": {
-    "description": "Extension description",
-    "message": "Chrome extension boilerplate developed with Vite, React and Typescript"
+    "description": "Tinkoff-QnA extension",
+    "message": "Chrome extension Tinkoff-QnA developed with Vite, React and Typescript"
   },
   "extensionName": {
-    "description": "Extension name",
-    "message": "Chrome extension boilerplate"
+    "description": "Tinkoff-QnA",
+    "message": "Chrome extension Tinkoff-QnA"
   }
 }
