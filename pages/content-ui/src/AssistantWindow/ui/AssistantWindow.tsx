@@ -4,12 +4,10 @@ import SpeechRecognition, { useSpeechRecognition } from 'react-speech-recognitio
 
 import ArrowUpIcon from '../../assets/arrow-up.svg?react';
 import MicrophoneIcon from '../../assets/microphone.svg?react';
-import MenuIcon from '../../assets/menu.svg?react';
 
 import useAutosizeTextArea from '@chrome-extension-boilerplate/shared/lib/hooks/useAutosizeTextArea';
 import { MessageList } from '@src/Message/ui';
 import { useChatStore } from '@src/Message/model/store';
-import { Popover } from '@chrome-extension-boilerplate/shared/ui/Popover';
 
 const AssistantWindow = () => {
   const messages = useChatStore((state) => state.messages);
