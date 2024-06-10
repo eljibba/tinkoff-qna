@@ -65,7 +65,7 @@ importers:
         version: 6.21.0(eslint@8.56.0)(typescript@5.2.2)
       '@vitejs/plugin-react-swc':
         specifier: ^3.6.0
-        version: 3.6.0(@swc/helpers@0.5.11)(vite@5.2.11(@types/node@20.12.11)(sass@1.74.1)(terser@5.31.0))
+        version: 3.6.0(@swc/helpers@0.5.11)(vite@5.2.13(@types/node@20.12.11)(sass@1.74.1)(terser@5.31.0))
       autoprefixer:
         specifier: ^10.4.19
         version: 10.4.19(postcss@8.4.38)
@@ -121,11 +121,11 @@ importers:
         specifier: 5.2.2
         version: 5.2.2
       vite:
-        specifier: ^5.2.11
-        version: 5.2.11(@types/node@20.12.11)(sass@1.74.1)(terser@5.31.0)
+        specifier: ^5.2.13
+        version: 5.2.13(@types/node@20.12.11)(sass@1.74.1)(terser@5.31.0)
       vite-plugin-svgr:
         specifier: ^4.2.0
-        version: 4.2.0(rollup@4.17.2)(typescript@5.2.2)(vite@5.2.11(@types/node@20.12.11)(sass@1.74.1)(terser@5.31.0))
+        version: 4.2.0(rollup@4.17.2)(typescript@5.2.2)(vite@5.2.13(@types/node@20.12.11)(sass@1.74.1)(terser@5.31.0))
 
   chrome-extension:
     dependencies:
@@ -2034,6 +2034,7 @@ packages:
 
   glob@7.2.3:
     resolution: {integrity: sha512-nFR0zLpU2YCaRxwoCJvL6UvCH2JFyFVIvwTLsIf21AuHlMskA1hhTdk+LlYJtOlYt9v6dvszD2BGRqBL+iQK9Q==}
+    deprecated: Glob versions prior to v9 are no longer supported
 
   globals@11.12.0:
     resolution: {integrity: sha512-WOBp/EEGUiIsJSp7wcv/y6MO+lV9UoncWqxuFfm8eBwzWNgyfBd6Gz+IeKQ9jCmyhoH99g15M3T+QaVHFjizVA==}
@@ -2137,6 +2138,7 @@ packages:
 
   inflight@1.0.6:
     resolution: {integrity: sha512-k92I/b08q4wvFscXCLvqfsHCrjrF7yiXsQuIVvVE7N82W3+aqpzuUdBbfhWcy/FZR3/4IgflMgKLOsvPDrGCJA==}
+    deprecated: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
 
   inherits@2.0.4:
     resolution: {integrity: sha512-k/vGaX4/Yla3WzyMCvTQOXYeIHvqOKtnqBduzTHpzpQZzAskKMhZ2K+EnBiSM9zGSoIFeMpXKxa4dYeZIQqewQ==}
@@ -2748,6 +2750,7 @@ packages:
 
   rimraf@3.0.2:
     resolution: {integrity: sha512-JZkJMZkAGFFPP2YqXZXPbMlMBgsxzE8ILs4lMIX/2o0L9UBw9O/Y3o6wFw/i9YLapcUJWwqbi3kdxIPdC62TIA==}
+    deprecated: Rimraf versions prior to v4 are no longer supported
     hasBin: true
 
   rimraf@5.0.7:
@@ -3180,8 +3183,8 @@ packages:
     peerDependencies:
       vite: ^2.6.0 || 3 || 4 || 5
 
-  vite@5.2.11:
-    resolution: {integrity: sha512-HndV31LWW05i1BLPMUCE1B9E9GFbOu1MbenhS58FuK6owSO5qHm7GiCotrNY1YE5rMeQSFBGmT5ZaLEjFizgiQ==}
+  vite@5.2.13:
+    resolution: {integrity: sha512-SSq1noJfY9pR3I1TUENL3rQYDQCFqgD+lM6fTRAM8Nv6Lsg5hDLaXkjETVeBt+7vZBCMoibD+6IWnT2mJ+Zb/A==}
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
     peerDependencies:
@@ -4125,10 +4128,10 @@ snapshots:
 
   '@ungap/structured-clone@1.2.0': {}
 
-  '@vitejs/plugin-react-swc@3.6.0(@swc/helpers@0.5.11)(vite@5.2.11(@types/node@20.12.11)(sass@1.74.1)(terser@5.31.0))':
+  '@vitejs/plugin-react-swc@3.6.0(@swc/helpers@0.5.11)(vite@5.2.13(@types/node@20.12.11)(sass@1.74.1)(terser@5.31.0))':
     dependencies:
       '@swc/core': 1.5.5(@swc/helpers@0.5.11)
-      vite: 5.2.11(@types/node@20.12.11)(sass@1.74.1)(terser@5.31.0)
+      vite: 5.2.13(@types/node@20.12.11)(sass@1.74.1)(terser@5.31.0)
     transitivePeerDependencies:
       - '@swc/helpers'
 
@@ -6356,18 +6359,18 @@ snapshots:
 
   v8-compile-cache-lib@3.0.1: {}
 
-  vite-plugin-svgr@4.2.0(rollup@4.17.2)(typescript@5.2.2)(vite@5.2.11(@types/node@20.12.11)(sass@1.74.1)(terser@5.31.0)):
+  vite-plugin-svgr@4.2.0(rollup@4.17.2)(typescript@5.2.2)(vite@5.2.13(@types/node@20.12.11)(sass@1.74.1)(terser@5.31.0)):
     dependencies:
       '@rollup/pluginutils': 5.1.0(rollup@4.17.2)
       '@svgr/core': 8.1.0(typescript@5.2.2)
       '@svgr/plugin-jsx': 8.1.0(@svgr/core@8.1.0(typescript@5.2.2))
-      vite: 5.2.11(@types/node@20.12.11)(sass@1.74.1)(terser@5.31.0)
+      vite: 5.2.13(@types/node@20.12.11)(sass@1.74.1)(terser@5.31.0)
     transitivePeerDependencies:
       - rollup
       - supports-color
       - typescript
 
-  vite@5.2.11(@types/node@20.12.11)(sass@1.74.1)(terser@5.31.0):
+  vite@5.2.13(@types/node@20.12.11)(sass@1.74.1)(terser@5.31.0):
     dependencies:
       esbuild: 0.20.2
       postcss: 8.4.38
