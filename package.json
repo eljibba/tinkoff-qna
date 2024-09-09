@@ -22,7 +22,7 @@
   },
   "type": "module",
   "dependencies": {
-    "@headlessui/react": "^2.0.4",
+    "@headlessui/react": "^2.1.5",
     "axios": "^1.7.2",
     "clsx": "^2.1.1",
     "immer": "^10.1.1",
